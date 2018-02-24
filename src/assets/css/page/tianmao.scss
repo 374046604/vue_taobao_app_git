@@ -1,0 +1,115 @@
+.tianmao {
+  width: 100%;
+  height: 100%;
+  .new_app_zzc {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.3);
+    .new_app {
+      margin-top: pr(-190);
+      margin-left: pr(-160);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: pr(320);
+      .icon-close1 {
+        position: absolute;
+        right: 0;
+        top: -32px;
+        font-size: 32px;
+        height: 32px;
+        line-height: 32px;
+      }
+      .new_app_img {
+        width: pr(320);
+        height: pr(380);
+      }
+    }
+  }
+  .tianmao_header {
+    padding-bottom: pr(10);
+    background: #FF0036;
+    .header_menu{
+      display: flex;
+      height: pr(50);
+      align-items: center;
+      justify-content: space-between;
+      &>i {
+        font-size: pr(32);
+        color: #fff;
+      }
+      .icon-menu {
+        margin-left: pr(10);
+        font-size: pr(40);
+      }
+      .is_login {
+        margin-right: pr(10);
+        font-size: pr(20);
+      }
+
+    }
+    .header_select {
+      position: relative;
+      margin-left: pr(15);
+      margin-right: pr(15);
+      background: #fff;
+      height: pr(50);
+      .select_click {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        &>span,
+        .icon-sousuo {
+          margin-left: pr(10);
+          font-size: pr(32);
+          line-height: pr(50);
+          color: #eeeeed;
+        }
+
+      }
+
+    }
+
+
+  }
+  .tianmao_main {
+    .main_item {
+      padding-top: pr(20);
+      display: flex;
+      width: 10rem;
+      align-items: center;
+      flex-wrap: wrap;
+      background: #fff;
+      &>li {
+        width: 20%;
+        flex-grow: 1;
+        text-align: center;
+        p {
+          text-align: center;
+          line-height: pr(37);
+          color: rgb(102, 102, 102);
+        }
+        img {
+          width: 80%;
+          height: 80%;
+        }
+      }
+    }
+    .swiper {
+      width: 100%;
+      height: pr(170);
+      .vux-swiper-item {
+        width: 100%;
+        height: pr(170);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+  }
+}

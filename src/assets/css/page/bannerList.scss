@@ -1,0 +1,89 @@
+  .banner_list {
+    width: 10rem;
+    .banner_nav {
+      width: 100%;
+      height: pr(45);
+      font-size: pr(20);
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      text-align: center;
+      &>li {
+        width: 10.28%;
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+      &>li.on {
+        color: red;
+        border-bottom: pr(1) solid red;
+      }
+    }
+    .banner_menu {
+      position: relative;
+      width: 100%;
+      &>li {
+        float: left;
+        width: 100%;
+      }
+      .munu_box {
+        width: 100%;
+        .box_li {
+          float: left;
+          width: 48%;
+          .li_img {
+            width: 100%;
+            &>img {
+                width: 100%;
+            }
+          }
+          .li_text {
+            padding: pr(5) pr(10);
+            .li_title {
+              .logo1 {
+                position: relative;
+                top: pr(2);
+                margin-right: pr(5);
+                width: pr(26);
+                height: pr(13);
+              }
+            }
+            .li_icon {
+                height: pr(20);
+              &>span {
+                display: inline-block;
+                padding: 0 pr(5);
+                height: pr(30);
+                border-radius: pr(5);
+                border: pr(1) solid #ff0036;
+                color: #ff0036;
+                font-size: pr(20);
+                line-height: pr(30);
+                -webkit-transform: scale(.5);
+                transform: scale(.5);
+                -webkit-transform-origin: left top;
+              }
+            }
+            .li_yuanold {
+              color: #ccc;
+              font-size: pr(14);
+              line-height: pr(21);
+              display: block;
+              text-decoration: line-through;
+            }
+            .li_yuannew {
+                font-size: pr(14);
+                color: red;
+                &>span {
+                    font-size: pr(22);
+                    line-height: pr(22);
+                }
+            }
+
+          }
+        }
+        .box_li:nth-child(2n) {
+          float: right;
+        }
+      }
+    }
+  }

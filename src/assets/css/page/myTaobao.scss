@@ -1,0 +1,75 @@
+.my_taobao {
+    .taobao_header {
+        position: relative;
+        width: 100%;
+        height: pr(170);
+        background: url('../assets/img/header.jpg') no-repeat ;
+        background-size: 100% pr(170);
+        .taobao_user {
+            position: absolute;
+            left: pr(25);
+            bottom: pr(-54);
+            width: pr(108);
+            height: pr(108);
+            background: #fff;
+            z-index: 10;
+            border-radius: 50%;
+            .userImg {
+                margin-left: pr(4);
+                margin-top: pr(4);
+                width: pr(100);
+                height: pr(100);
+                border-radius: 50%;
+            }
+        }
+    }
+    .user_upload_box {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10rem;
+        background: #fff;
+        z-index: 99;
+        text-align: center;
+        .user_img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .about_my {
+        height: pr(78);
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        &>span {
+            display: inline-block;
+            width: 130px;
+            font-size: 16px;
+            text-align: center;
+            line-height: 38px;
+            border-right: 1px solid #e7e7e7;
+        }
+        &>span:last-child {
+            border-right: none;
+        }
+
+    }
+    .cell01,
+    .cell02,
+    .cell03 {
+        .weui-cell {
+            line-height: pr(37);
+        }
+
+    }
+    .down_app {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+
+}

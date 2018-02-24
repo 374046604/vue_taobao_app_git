@@ -1,0 +1,77 @@
+.login {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: pr(40);
+  background: #fff;
+  .login_user {
+    .user_img {
+      margin: pr(70) auto 0;
+      width: pr(115);
+      height: pr(115);
+      background: red;
+      border-radius: 50%;
+      overflow: hidden;
+      &>img {
+          width: 100%;
+          height: 100%;
+      }
+    }
+    .user_user,
+    .user_psw {
+      margin-top: pr(70);
+    }
+    .user_user>input,
+    .user_psw>input {
+      padding-left: pr(10);
+      width: 100%;
+      height: pr(37);
+      line-height: pr(37);
+      font-size: pr(24);
+      border: none;
+      border-bottom: pr(1) solid red;
+    }
+    .user_about {
+        margin-top: pr(30);
+        margin-bottom: pr(10);
+    }
+    .user_about>span:nth-child(2n+1) {
+      float: left;
+      font-size: pr(20);
+    }
+    .user_about>span:nth-child(2n) {
+      float: right;
+      font-size: pr(20);
+    }
+  }
+  .login_btn {
+      .user_login,
+      .user_tel {
+        margin: 0 auto;
+        margin-top: pr(40);
+        display: block;
+        width: 100%;
+        height: pr(65);
+        line-height: pr(65);
+        text-align: center;
+        font-size: 0.34rem;
+        color: #fff;
+        border-radius: 100px;
+        box-shadow: 0 2px 4px 0 rgba(255, 196, 0, 0.40);
+        background: linear-gradient(90deg, #FFE079 1%, #FFC400 100%);
+        background: -webkit-linear-gradient(0deg, #FFE079 1%, #FFC400 100%);
+        background: -moz-linear-gradient(left, #FFE079 1%, #FFC400 100%);
+        background: -o-linear-gradient(left, #FFE079 1%, #FFC400 100%);
+      }
+      .user_login:active,
+      .user_tel:active {
+        background: #ff5000;
+
+      }
+
+  }
+
+
+}

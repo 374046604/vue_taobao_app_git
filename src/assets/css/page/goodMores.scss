@@ -1,0 +1,109 @@
+.good_mores {
+  .good_header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: pr(44);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    .icon-arrowleft,
+    .icon-cart {
+      margin-left: pr(10);
+      width: pr(35);
+      height: pr(35);
+      font-size: pr(25);
+      line-height: pr(35);
+      border-radius: pr(20);
+      color: #fff;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.38);
+    }
+    .icon-cart {
+      margin-right: pr(10);
+    }
+    .title {
+      background: rgba(0, 0, 0, 0.38);
+      border-radius: pr(15);
+      &>div {
+        padding-left: pr(45);
+        width: pr(270);
+        height: pr(30);
+        font-size: pr(14);
+        color: #fff;
+        line-height: pr(30);
+        background: url('../assets/img/logo01.png') no-repeat left pr(20) center;
+        background-size: pr(20) pr(20);
+      }
+    }
+  }
+  .good_main {
+    .swiper {
+      width: 100%;
+      height: 100%;
+      .vux-swiper {
+        height: 5rem;
+      }
+      .vux-indicator {
+        .vux-icon-dot {
+          height: 20px;
+          width: 20px;
+          border-radius: 10px;
+        }
+      }
+      .vux-swiper-item {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .main_nav {
+      &>img {
+        width: 100%;
+        height: pr(50);
+      }
+    }
+    .main_context {
+      padding: pr(20);
+      .context_title {
+        font-size: pr(14);
+        height: pr(42);
+        line-height: pr(42);
+      }
+      .context_yuan {
+        font-size: pr(16);
+        padding-right: 5px;
+        color: #051b28;
+      }
+      .yuan {
+        font-size: pr(18);
+        color: #FF0036;
+      }
+      .context_newyuan {
+        font-size: pr(24);
+        color: #FF0036;
+      }
+      .context_p {
+        font-size: 12px;
+        height: 20px;
+        line-height: 20px;
+        color: #888;
+        .context_oldyuan {
+          text-decoration: line-through;
+        }
+      }
+      .context_about {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: #888;
+      }
+
+    }
+  }
+}
